@@ -20,7 +20,7 @@ class CheckLogin
         // echo 'pppppppp';
         // dd($request->session()->has('user'));
         if (!$request->session()->has('user')) {
-            return redirect('/login');
+            return redirect('/login/login');
         }
         return $next($request);
     }
